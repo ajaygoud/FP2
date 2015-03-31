@@ -7,6 +7,31 @@ During this assignment, you should start looking for teammates. See the project 
 
 Write your report right in this file. Instructions are below. You can delete them if you like, or just leave them at the bottom.
 You are allowed to change/delete anything in this file to make it into your report. It will be public.
+# I have explored opening a web browser library
+
+#For the second library exploration, I choose open a browser, this is not all that difficult to work with because we know what is a browser and where it will be opened so we just need to write some code to work on opening browser
+
+#the main part of the code is (require net/sendurl)
+send-url is used for opening a URL in the user’s chosen web browser.
+send-url command works differently in different operating systems below are some  operating systems and its working 
+On Windows, send-url normally uses shell-execute to launch a browser.
+On Mac OS X, send-url runs osascript to start the user’s chosen browser.
+On Unix, send-url uses a user-preference, or when none is set, it will look for a known browser.
+
+(require net/sendurl)
+(send-url "https://www.youtube.com/")
+
+when I type the above code and run in the racket environment it will open browser with youtube page as output.
+
+
+(send-url/file	 path )
+Similar to send-url  but accepts a path to a file to be displayed by the browser.
+
+(send-url/contents	 	contents)
+Similar to send-url/file, but it consumes the contents of a page to show and displays it from a temporary file.
+
+the above are the commands for different operations that we can do in open a browser library.
+
 
 This file is formatted with the [**markdown** language][markdown], so take a glance at how that works.
 
